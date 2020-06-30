@@ -1,0 +1,42 @@
+<view class='container'>
+  <view class='logo-container'>
+    <image class='logo-img' src='/images/static/logo.png'></image>
+  </view>
+  <view class='attribute-container'>
+    <view class='attribute-title'>开发者信息</view>
+    <view class='attribute-item'>
+      <view class='attribute-code-container'>
+        <view class='code-circle'></view>
+        <view class='code-name'>策划</view>
+        <view class='coder'>TenMoons</view>
+      </view>
+      <view class='attribute-code-container'>
+        <view class='code-circle'></view>
+        <view class='code-name'>设计</view>
+        <view class='coder'>TenMoons</view>
+      </view>
+      <view class='attribute-code-container'>
+        <view class='code-circle'></view>
+        <view class='code-name'>研发</view>
+        <view class='coder'>也是TenMoons</view>
+      </view>
+      <view class='attribute-code-container'>
+        <view class='code-circle'></view>
+        <view class='code-name'>测试</view>
+        <view class='coder'>还是TenMoons  嘻 (o≖◡≖)</view>
+      </view>
+    </view>
+  </view>
+  <view class='address-container'>
+    <view class='dot' />
+    <view class='doc-container' bindtap='copyLink' data-link="https://github.com/TenMoons/AHU-CS-Team">
+      <text class='doc-txt'>GitHub</text>
+      <text class='address'>https://github.com/TenMoons/AHU-CS-Team</text>
+    </view>
+  </view>
+  <image bindtap='onImage' src='/images/static/qrcode.png' class='code'></image>
+  <text class='desc'>如果你也很感动</text>
+  <text class='desc'>可以给爆肝的开发者打赏一个窝窝头</text>
+  <text class='desc'>@TenMoons 一个会写代码的得分后卫</text>
+  <official-account class="account"></official-account>
+</view>

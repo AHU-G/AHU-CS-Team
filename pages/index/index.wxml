@@ -1,13 +1,16 @@
-<!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
-</view>
+<swiper-item imgUrls="{{imgUrls}}" />
+
+<!-- 分割线 -->
+<!-- <van-divider
+  contentPosition="center"
+  customStyle="color: #1989fa; border-color: #1989fa; font-size: 14px;"
+>
+  功能导航
+</van-divider> -->
+
+<van-grid column-num="3">
+  <van-grid-item icon="gem-o" text="球队简介"/>
+  <van-grid-item icon="friends-o" text="队员信息"/>
+  <van-grid-item icon="calender-o" text="日程表"/>
+  <van-grid-item icon="photo-o" text="相册"/>
+</van-grid>

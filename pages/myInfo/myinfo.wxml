@@ -1,0 +1,25 @@
+<view class="container">
+	<view class="userinfo">
+		<van-button plain icon="smile-o" type="info" wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">授权登录
+    </van-button>
+		<block wx:else>
+			<image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+			<text class="userinfo-nickname">{{userInfo.nickName}}</text>
+		</block>
+	</view>
+</view>
+<view>
+	<van-cell-group>
+		<van-cell value="" icon="user-o" is-link bind:click="onGoToConfirm">
+			<view slot="title">
+				<view class="title">队员认证</view>
+				<van-tag type="warning" wx:if="{{!hasConfirm}}">快点我~</van-tag>
+			</view>
+		</van-cell>
+		<van-cell value=""  icon="flag-o" is-link bind:click="onGoToDevelop">
+			<view slot="title">
+				<view class="title">开发者信息</view>
+			</view>
+		</van-cell>
+	</van-cell-group>
+</view>

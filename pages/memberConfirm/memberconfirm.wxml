@@ -1,0 +1,4 @@
+<van-notice-bar
+  left-icon="volume-o"
+  text="队员认证对象为：计科女篮队员、经理以及教练~ 游客是无法认证成功的呢~"
+/>
