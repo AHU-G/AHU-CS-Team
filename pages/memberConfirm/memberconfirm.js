@@ -1,12 +1,108 @@
-// pages/memberConfirm/memberconfirm.js
+import specialties from '../../utils/specialties.js'
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    columns: [{
+        values: Object.keys(specialties),
+        className: 'column1',
+      },
+      {
+        values: specialties['研究生'],
+        className: 'column2',
+        defaultIndex: 0,
+      }
+    ],
+    specialty: '', // 专业
+    stu_name: '',
+    stu_id: '',
+    phone: '',
+    sms: '', // 短信验证码
+    tip: '发送验证码',
+    timer: null,
+    popupFlag: false,
   },
+
+  onClickSpec(){
+    this.setData({
+      popupFlag: true
+    })
+  },
+
+  onClose() {
+    this.setData({
+      popupFlag: false
+    })
+  },
+
+  // picker动态数据联动
+  onChange: e => {
+    const { picker, value, index } = e.detail;
+    picker.setColumnValues(1, specialties[value[0]]);
+  },
+  
+  chooseSpec(e) {
+    this.setData({
+      specialty: e.detail.value[0] +  e.detail.value[1]
+    })
+    this.onClose()
+  },
+
+  getStuId(e) {
+    this.setData({
+      stu_id: e.detail.value
+    })
+  },
+
+  getStuName(e) {
+    this.setData({
+      stu_name: e.detail.value
+    })
+  },
+
+  getPhone(e) {
+    this.setData({
+      phone: e.detail.value
+    })
+  },
+
+  getSms(e) {
+    this.setData({
+      sms: e.detail.value
+    })
+  },
+
+  sendCode() {
+    let time = 60
+    this.setData({
+      tip: time + 's后重试',
+    })
+    this.timer = setInterval(() => {
+      if (time === 1) {
+        this.setData({
+          tip: time + '发送验证码',
+        })
+        clearInterval(this.timer)
+        this.timer = null
+      } else {
+        time--
+        this.setData({
+          tip: time + 's',
+        })
+      }
+    }, 1000)
+  },
+
+  submit() {
+    console.log(this.data.specialty)
+    console.log(this.data.stu_id)
+    console.log(this.data.stu_name)
+    console.log(this.data.phone)
+  },
+
 
   /**
    * 生命周期函数--监听页面加载

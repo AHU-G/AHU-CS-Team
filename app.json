@@ -1,14 +1,16 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
     "pages/myInfo/myinfo",
     "pages/calendar/calendar",
     "pages/album/album",
     "pages/memberConfirm/memberconfirm",
     "pages/developer/developers",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/gameVideo/gameVideo",
+    "pages/members/members"
   ],
-  "window":{
+  "window": {
     "backgroundTextStyle": "dark",
     "backgroundColor": "#eeeeee",
     "navigationBarBackgroundColor": "#ffffff",
@@ -33,7 +35,6 @@
       }
     ]
   },
-  "style": "v2",
   "sitemapLocation": "sitemap.json",
   "usingComponents": {
     "van-tab": "dist/tab/index",
@@ -47,6 +48,8 @@
     "van-notice-bar": "dist/notice-bar/index",
     "van-grid": "dist/grid/index",
     "van-grid-item": "dist/grid-item/index",
-    "van-divider": "dist/divider/index"
+    "van-divider": "dist/divider/index",
+    "van-field": "dist/field/index",
+    "van-picker": "dist/picker/index"
   }
 }

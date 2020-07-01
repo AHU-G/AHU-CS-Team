@@ -1,16 +1,13 @@
 <swiper-item imgUrls="{{imgUrls}}" />
 
-<!-- 分割线 -->
-<!-- <van-divider
-  contentPosition="center"
-  customStyle="color: #1989fa; border-color: #1989fa; font-size: 14px;"
->
-  功能导航
-</van-divider> -->
-
 <van-grid column-num="3">
-  <van-grid-item icon="gem-o" text="球队简介"/>
-  <van-grid-item icon="friends-o" text="队员信息"/>
-  <van-grid-item icon="calender-o" text="日程表"/>
-  <van-grid-item icon="photo-o" text="相册"/>
+  <van-grid-item icon="gem-o" text="球队简介" />
+  <van-grid-item icon="fire-o" text="招新宣传"/>
+  <van-grid-item icon="friends-o" text="队员信息" link-type="navigateTo" url="/pages/members/members"/>
+  <van-grid-item icon="user-o" text="队员认证" link-type="navigateTo" url="/pages/memberConfirm/memberconfirm" badge="点我~"/>
+  <van-grid-item icon="chart-trending-o" text="赛事记录"/>
+  <van-grid-item icon="photo-o" text="相册" link-type="navigateTo" url="/pages/album/album"/>
+  <van-grid-item icon="video-o" text="比赛集锦" link-type="navigateTo" url="/pages/gameVideo/gameVideo"/>
+  <van-grid-item icon="bullhorn-o" text="通知" link-type="navigateTo" url="/pages/calendar/calendar"/>
+  <van-grid-item icon="flag-o" text="开发信息" link-type="navigateTo" url="/pages/developer/developers"/>
 </van-grid>

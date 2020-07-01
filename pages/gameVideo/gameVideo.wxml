@@ -1,0 +1,12 @@
+<view wx:for="{{video}}">
+	<view class="content-card">
+		<view class="card-top">
+			<view class="card-dot"></view>
+			<view class="content-name">{{item.title}}</view>
+		</view>
+		<view class="card-bottom {{cardPadding?'card-padding':'padd'}}">
+			<!-- <slot /> -->
+			<video style="width: 100%" src="{{item.url}}"></video>
+		</view>
+	</view>
+</view>

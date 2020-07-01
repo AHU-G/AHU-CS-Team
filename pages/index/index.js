@@ -1,10 +1,11 @@
-//index.js
 //获取应用实例
 const app = getApp()
 
 Page({
   data: {
-    imgUrls: ['/images/swiper/1.JPG', '/images/swiper/2.png', '/images/swiper/3.jpg'], // 轮播图  277px*186px
+    imgUrls: ['http://qcqo1h1n6.bkt.clouddn.com/image/swiper1.JPG', 
+    'http://qcqo1h1n6.bkt.clouddn.com/image/swiper2.png', 
+    'http://qcqo1h1n6.bkt.clouddn.com/image/swiper3.jpg'], // 轮播图 
   },
 
   onLoad: function () {

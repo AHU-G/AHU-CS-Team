@@ -1,4 +1,3 @@
-// pages/album/album.js
 Page({
 
   /**
@@ -6,6 +5,13 @@ Page({
    */
   data: {
     active: 0,  // 默认启用第一个标签
+  },
+
+  onChange(event) {
+    wx.showToast({
+      title: `切换到标签 ${event.detail.name}`,
+      icon: 'none',
+    });
   },
 
   /**

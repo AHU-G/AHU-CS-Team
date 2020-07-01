@@ -18,10 +18,19 @@ Component({
    */
   methods: {
     swiperChange(e) {
-  //    console.log(e);
       this.setData({
         currentIndex: e.detail.current
       });
+    },
+    clickImg(e) {
+      let url = this.properties.imgUrls[this.data.currentIndex]
+      wx.previewImage({
+        urls: this.properties.imgUrls,
+        current: url,
+        success: res => {
+
+        }
+      })
     }
   }
 });
