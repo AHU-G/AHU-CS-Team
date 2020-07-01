@@ -10,7 +10,7 @@
 
 ## 开发者名单
 <p align="center">
-    <img src="http://qcqo1h1n6.bkt.clouddn.com/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20200620172356.jpg" style="weight: 80px; height:80px">
+    <img src="http://qcs4zgm4j.bkt.clouddn.com/myavatar.jpg" style="weight: 80px; height:80px">
     <h5 align="center" style="font-size:16px;">SHI Yue</h5>
 </p>
 
