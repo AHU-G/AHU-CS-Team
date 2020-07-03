@@ -8,7 +8,10 @@
     "pages/developer/developers",
     "pages/logs/logs",
     "pages/gameVideo/gameVideo",
-    "pages/members/members"
+    "pages/members/members",
+    "pages/aboutTeam/aboutTeam",
+    "pages/recruitment/recruitment",
+    "pages/record/record"
   ],
   "window": {
     "backgroundTextStyle": "dark",
@@ -50,6 +53,7 @@
     "van-grid-item": "dist/grid-item/index",
     "van-divider": "dist/divider/index",
     "van-field": "dist/field/index",
-    "van-picker": "dist/picker/index"
+    "van-picker": "dist/picker/index",
+    "fa": "/components/includes/fa/index"
   }
 }

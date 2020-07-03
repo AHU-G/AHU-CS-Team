@@ -10,7 +10,7 @@
 
 ## 开发者名单
 <p align="center">
-    <img src="http://qcs4zgm4j.bkt.clouddn.com/myavatar.jpg" width="60" height="60">
+    <img src="http://qcs4zgm4j.bkt.clouddn.com/myavatar.jpg" width="120" height="120">
     <h5 align="center" style="font-size:16px;">SHI Yue</h5>
 </p>
 

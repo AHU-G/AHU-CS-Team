@@ -50,7 +50,7 @@ page {
 }
 
 .address {
-  font-size: 28rpx;
+  font-size: 26rpx;
   color    : #596c8e;
 }
 
@@ -124,4 +124,9 @@ page {
   font-family: PingFangSC-Regular;
   color      : rgba(89, 108, 142, 1);
   margin-left: 16rpx;
+}
+
+.btn {
+  margin-top: 20rpx;
+  margin-left: 20rpx;
 }

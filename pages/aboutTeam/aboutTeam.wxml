@@ -1,0 +1,40 @@
+<view class="next1">
+    <text class="iconfont iconbaojiaquotation2" style="color: #D0B291"></text>
+    <text class="d1">balabala</text>
+    <text class="d1">balabala</text>
+    <text class="d1">balabala</text>
+    <view class="tag2-container">
+        <text class="iconfont iconbaojiaquotation" style="color: #D0B291"></text>
+    </view>
+</view>
+<view class="next2">
+    <text class="iconfont iconbaojiaquotation2" style="color: #d0d0d0"></text>
+    <text class="d2">balabala</text>
+    <text class="d2">
+        balabala
+    </text>
+    <view class="tag2-container">
+        <text class="iconfont iconbaojiaquotation" style="color: #d0d0d0"></text>
+    </view>
+</view>
+<view>
+    <text style="color:#333333;font-size:28rpx;font-weight: 500">balabala</text>
+</view>
+<view class="next3">
+    <view class="one-row">
+        <view class="left-side">
+            <text>balabala</text>
+            <text>balabala</text>
+        </view>
+        <view class="right-side">
+            <view bind:tap="onCopyCourse" class="btn">
+                <text>复</text>
+                <text>制</text>
+            </view>
+        </view>
+    </view>
+    balabala
+</view>
+<view class="logo-container">
+    <image class="logo" src="/images/static/logo.png"></image>
+</view>

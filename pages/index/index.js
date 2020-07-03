@@ -3,9 +3,11 @@ const app = getApp()
 
 Page({
   data: {
-    imgUrls: ['http://qcqo1h1n6.bkt.clouddn.com/image/swiper1.JPG', 
-    'http://qcqo1h1n6.bkt.clouddn.com/image/swiper2.png', 
-    'http://qcqo1h1n6.bkt.clouddn.com/image/swiper3.jpg'], // 轮播图 
+    imgUrls: ['http://qcs4zgm4j.bkt.clouddn.com/swiper/1.JPG',
+      'http://qcs4zgm4j.bkt.clouddn.com/swiper/2.jpg',
+      'http://qcs4zgm4j.bkt.clouddn.com/swiper/3.jpg',
+      'http://qcs4zgm4j.bkt.clouddn.com/swiper/4.jpg'
+    ], // 轮播图 
   },
 
   onLoad: function () {
@@ -14,7 +16,7 @@ Page({
         userInfo: app.globalData.userInfo,
         hasUserInfo: true
       })
-    } else if (this.data.canIUse){
+    } else if (this.data.canIUse) {
       // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
       // 所以此处加入 callback 以防止这种情况
       app.userInfoReadyCallback = res => {
@@ -36,7 +38,7 @@ Page({
       })
     }
   },
-  getUserInfo: function(e) {
+  getUserInfo: function (e) {
     console.log(e)
     app.globalData.userInfo = e.detail.userInfo
     this.setData({

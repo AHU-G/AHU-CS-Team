@@ -1,5 +1,6 @@
 {
   "usingComponents": {
     "swiper-item": "/components/swiper/index"
-  }
+  },
+  "enablePullDownRefresh": true
 }

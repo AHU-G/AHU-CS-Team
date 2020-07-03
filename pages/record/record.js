@@ -1,30 +1,11 @@
-const app = getApp()
-
+// pages/record/record.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    link: "https://github.com/TenMoons/AHU-CS-Team"
-  },
 
-  copyLink(e) {
-    wx.setClipboardData({
-      data: this.data.link,
-      success: () => {
-        wx.showToast({
-          title: '已复制',
-          duration: 1000,
-        })
-      }
-    })
-  },
-
-  onImage() {
-    wx.previewImage({
-      urls: ['/images/static/qrcode.png']
-    });
   },
 
   /**
