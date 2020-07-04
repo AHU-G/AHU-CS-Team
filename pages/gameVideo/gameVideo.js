@@ -14,6 +14,10 @@ Page({
         'title': '2019年安徽大学学生篮球联赛集锦',
         'url': 'http://qcs4zgm4j.bkt.clouddn.com/video/2019.mp4',        
       },
+      {    
+        'title': '2018年安徽大学学生篮球联赛集锦',
+        'url': 'http://qcs4zgm4j.bkt.clouddn.com/video/2018.mp4',        
+      },
       {
         'title': '计科女篮后场双门',
         'url': 'http://qcs4zgm4j.bkt.clouddn.com/backcourt.mp4',    

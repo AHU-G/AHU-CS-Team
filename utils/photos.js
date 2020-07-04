@@ -1,0 +1,60 @@
+// 队员信息列表
+
+const photo = [
+  [
+    'http://qcqo1h1n6.bkt.clouddn.com/photo/game/1.jpg-mini',
+    'http://qcqo1h1n6.bkt.clouddn.com/photo/game/2.jpg-mini',
+    'http://qcqo1h1n6.bkt.clouddn.com/photo/game/3.jpg-mini',
+    'http://qcqo1h1n6.bkt.clouddn.com/photo/game/4.jpg-mini',
+    'http://qcqo1h1n6.bkt.clouddn.com/photo/game/5.jpg-mini',
+    'http://qcqo1h1n6.bkt.clouddn.com/photo/game/6.jpg-mini',
+    'http://qcqo1h1n6.bkt.clouddn.com/photo/game/7.jpg-mini',
+    'http://qcqo1h1n6.bkt.clouddn.com/photo/game/8.jpg-mini',
+    'http://qcqo1h1n6.bkt.clouddn.com/photo/game/9.jpg-mini',
+    'http://qcqo1h1n6.bkt.clouddn.com/photo/game/10.jpg-mini',
+    'http://qcqo1h1n6.bkt.clouddn.com/photo/game/11.jpg-mini',
+    'http://qcqo1h1n6.bkt.clouddn.com/photo/game/12.jpg-mini',
+    'http://qcqo1h1n6.bkt.clouddn.com/photo/game/13.jpg-mini',
+    'http://qcqo1h1n6.bkt.clouddn.com/photo/game/14.jpg-mini',
+    'http://qcqo1h1n6.bkt.clouddn.com/photo/game/15.jpg-mini',
+    'http://qcqo1h1n6.bkt.clouddn.com/photo/game/16.jpg-mini',
+    'http://qcqo1h1n6.bkt.clouddn.com/photo/game/17.jpg-mini',
+    'http://qcqo1h1n6.bkt.clouddn.com/photo/game/18.jpg-mini',
+    'http://qcqo1h1n6.bkt.clouddn.com/photo/game/19.jpg-mini',
+    'http://qcqo1h1n6.bkt.clouddn.com/photo/game/20.jpg-mini',
+    'http://qcqo1h1n6.bkt.clouddn.com/photo/game/21.jpg-mini',
+    'http://qcqo1h1n6.bkt.clouddn.com/photo/game/22.jpg-mini',
+    'http://qcqo1h1n6.bkt.clouddn.com/photo/game/23.jpg-mini',
+    'http://qcqo1h1n6.bkt.clouddn.com/photo/game/24.jpg-mini',
+    'http://qcqo1h1n6.bkt.clouddn.com/photo/game/25.JPG-mini',
+    'http://qcqo1h1n6.bkt.clouddn.com/photo/game/26.JPG-mini',
+    'http://qcqo1h1n6.bkt.clouddn.com/photo/game/27.JPG-mini',
+    'http://qcqo1h1n6.bkt.clouddn.com/photo/game/28.JPG-mini',
+    'http://qcqo1h1n6.bkt.clouddn.com/photo/game/29.JPG-mini',
+    'http://qcqo1h1n6.bkt.clouddn.com/photo/game/30.JPG-mini',
+    'http://qcqo1h1n6.bkt.clouddn.com/photo/game/31.jpg-mini',
+    'http://qcqo1h1n6.bkt.clouddn.com/photo/game/32.jpg-mini',
+    'http://qcqo1h1n6.bkt.clouddn.com/photo/game/33.jpg-mini',
+    'http://qcqo1h1n6.bkt.clouddn.com/photo/game/34.jpg-mini',
+    'http://qcqo1h1n6.bkt.clouddn.com/photo/game/35.jpg-mini',
+    'http://qcqo1h1n6.bkt.clouddn.com/photo/game/36.jpg-mini',
+    'http://qcqo1h1n6.bkt.clouddn.com/photo/game/37.jpg-mini',
+    'http://qcqo1h1n6.bkt.clouddn.com/photo/game/38.jpg-mini',
+    'http://qcqo1h1n6.bkt.clouddn.com/photo/game/39.jpg-mini',
+    'http://qcqo1h1n6.bkt.clouddn.com/photo/game/40.jpg-mini',
+    'http://qcqo1h1n6.bkt.clouddn.com/photo/game/41.jpg-mini',
+    'http://qcqo1h1n6.bkt.clouddn.com/photo/game/42.jpg-mini',
+    'http://qcqo1h1n6.bkt.clouddn.com/photo/game/42.jpg-mini',
+  ],  // 比赛
+  [
+    'http://qcqo1h1n6.bkt.clouddn.com/photo/train/1.jpg-mini',
+  ],  // 训练
+  [
+    'http://qcqo1h1n6.bkt.clouddn.com/photo/daily/1.jpg-mini',
+    'http://qcqo1h1n6.bkt.clouddn.com/photo/daily/2.jpg-mini',
+    'http://qcqo1h1n6.bkt.clouddn.com/photo/daily/3.jpg-mini',
+    'http://qcqo1h1n6.bkt.clouddn.com/photo/daily/4.jpg-mini',
+    'http://qcqo1h1n6.bkt.clouddn.com/photo/daily/5.jpg-mini',
+  ],  // 日常
+]
+export default photo

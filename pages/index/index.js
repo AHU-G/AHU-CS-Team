@@ -3,10 +3,10 @@ const app = getApp()
 
 Page({
   data: {
-    imgUrls: ['http://qcs4zgm4j.bkt.clouddn.com/swiper/1.JPG',
-      'http://qcs4zgm4j.bkt.clouddn.com/swiper/2.jpg',
-      'http://qcs4zgm4j.bkt.clouddn.com/swiper/3.jpg',
-      'http://qcs4zgm4j.bkt.clouddn.com/swiper/4.jpg'
+    imgUrls: ['http://qcqo1h1n6.bkt.clouddn.com/static/swiper/01.jpg-mini',
+      'http://qcqo1h1n6.bkt.clouddn.com/static/swiper/02.jpg-mini',
+      'http://qcqo1h1n6.bkt.clouddn.com/static/swiper/03.jpg-mini',
+      'http://qcqo1h1n6.bkt.clouddn.com/static/swiper/04.jpg-mini',
     ], // 轮播图 
   },
 

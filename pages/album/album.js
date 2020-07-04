@@ -1,3 +1,5 @@
+import photo from '../../utils/photos.js'
+
 Page({
 
   /**
@@ -5,13 +7,28 @@ Page({
    */
   data: {
     active: 0,  // 默认启用第一个标签
+    currentIndex: 0,
+    imgUrls: photo
+  },
+  
+  onChange(e) {
+    let i = e.detail.name
+    let that = this
+    that.setData({
+      currentIndex: i
+    })
   },
 
-  onChange(event) {
-    wx.showToast({
-      title: `切换到标签 ${event.detail.name}`,
-      icon: 'none',
-    });
+  previewImg(e) {
+    let index = e.currentTarget.dataset.index
+    let url = this.data.imgUrls[this.data.currentIndex][index]
+      wx.previewImage({
+        urls: this.data.imgUrls[this.data.currentIndex],
+        current: url,
+        success: res => {
+
+        }
+      })
   },
 
   /**
@@ -25,7 +42,9 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+    this.setData({
+      imgUrls: photo
+    })
   },
 
   /**

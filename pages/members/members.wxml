@@ -1,24 +1,24 @@
-<van-tabs active="{{ active }}">
+<van-tabs active="{{ active }}" bind:change="onChange">
 	<van-tab title="队员">
-		<van-grid column-num="4" gutter="{{ 10 }}">
-			<van-grid-item wx:for="{{ memberList }}" wx:key="index" use-slot data-index="{{index}}">
-				<image style="width: 80px; height: 80px;" src="{{item.iconUrl}}" bindtap="previewImg" />
-				<text style="font-size:28rpx; font-family: -apple-system; color: gray; margin-top: 10rpx">{{item.name}}</text>
+		<van-grid column-num="4" gutter="{{ 10 }}" clickable>
+			<van-grid-item wx:for="{{ memberList[currentIndex] }}" wx:key="index" use-slot data-index="{{index}}">
+				<image style="width: 80px; height: 80px;" src="{{item.iconUrl}}" bindtap="previewImg" mode="aspectFill" />
+				<text style="font-size:28rpx; font-family: -apple-system; color: gray;">{{item.name}}</text>
 			</van-grid-item>
 		</van-grid>
 	</van-tab>
 	<van-tab title="经理">
-  <van-grid column-num="4">
-			<van-grid-item wx:for="{{ managerList }}" wx:key="index" use-slot data-index="{{index}}">
-				<image style="width: 80px; height: 80px;" src="{{item.iconUrl}}" />
+  <van-grid column-num="4" gutter="{{ 10 }}" clickable>
+			<van-grid-item wx:for="{{ memberList[currentIndex] }}" wx:key="index" use-slot data-index="{{index}}">
+				<image style="width: 80px; height: 80px;" src="{{item.iconUrl}}" mode="aspectFill" />
 				<text style="font-size:28rpx; font-family: -apple-system; color: gray">{{item.name}}</text>
 			</van-grid-item>
 		</van-grid>
   </van-tab>
 	<van-tab title="教练">
-  <van-grid column-num="4">
-			<van-grid-item wx:for="{{ coachList }}" wx:key="index" use-slot data-index="{{index}}">
-				<image style="width: 80px; height: 80px;" src="{{item.iconUrl}}" />
+  <van-grid column-num="4" gutter="{{ 10 }}" clickable>
+			<van-grid-item wx:for="{{ memberList[currentIndex] }}" wx:key="index" use-slot data-index="{{index}}">
+				<image style="width: 80px; height: 80px;" src="{{item.iconUrl}}" mode="aspectFill" />
 				<text style="font-size:28rpx; font-family: -apple-system; color: gray">{{item.name}}</text>
 			</van-grid-item>
 		</van-grid>

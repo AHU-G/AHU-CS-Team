@@ -7,30 +7,28 @@ Page({
    */
   data: {
     memberList: members,
-    managerList: [{
-      'name': '杨云帆',
-      'iconUrl': 'http://qcs4zgm4j.bkt.clouddn.com/image/members/yyf.png'
-    }],
-    coachList: [{
-        'name': '王小宇',
-        'iconUrl': 'http://qcs4zgm4j.bkt.clouddn.com/image/members/coach_wxy.png'
-      },
-      {
-        'name': '徐雪健',
-        'iconUrl': 'http://qcs4zgm4j.bkt.clouddn.com/image/members/coach_xxj.png'
-      },
-      {
-        'name': '周廷恒',
-        'iconUrl': 'http://qcs4zgm4j.bkt.clouddn.com/image/members/coach_zth.png'
-      },
-    ],
+    currentIndex: 0,
     active: 0, // 默认启用第一个标签
-    index: 0,
   },
 
-  // 预览图片
+  onChange(e) {
+    let i = e.detail.name
+    let that = this
+    that.setData({
+      currentIndex: i
+    })
+  },
+
   previewImg(e) {
-    console.log(e)
+    let index = e.currentTarget.dataset.index
+    let url = this.data.imgUrls[this.data.currentIndex][index]
+      wx.previewImage({
+        urls: this.data.imgUrls[this.data.currentIndex],
+        current: url,
+        success: res => {
+
+        }
+      })
   },
 
   /**

@@ -1,5 +1,23 @@
 <van-tabs active="{{ active }}" bind:change="onChange">
-  <van-tab title="训练">内容 1</van-tab>
-  <van-tab title="比赛">内容 2</van-tab>
-  <van-tab title="日常">内容 3</van-tab>
+	<van-tab title="比赛">
+  <van-grid column-num="4" gutter="{{ 10 }}" square clickable>
+			<van-grid-item wx:for="{{ imgUrls[currentIndex] }}" wx:key="index" use-slot data-index="{{index}}" wx:for-index="index" bindtap="previewImg">
+				<image style="width: 80px; height: 80px;" src="{{item}}" mode="aspectFill"/>
+			</van-grid-item>
+		</van-grid>
+	</van-tab>
+	<van-tab title="训练">
+  <van-grid column-num="4" gutter="{{ 10 }}" square clickable>
+			<van-grid-item wx:for="{{ imgUrls[currentIndex] }}" wx:key="index" use-slot data-index="{{index}}" wx:for-index="index" bindtap="previewImg">
+				<image style="width: 80px; height: 80px;" src="{{item}}" mode="aspectFill"/>
+			</van-grid-item>
+		</van-grid>
+	</van-tab>
+	<van-tab title="日常">
+		<van-grid column-num="4" gutter="{{ 10 }}" square clickable>
+			<van-grid-item wx:for="{{ imgUrls[currentIndex] }}" wx:key="index" use-slot data-index="{{index}}" wx:for-index="index" bindtap="previewImg">
+				<image style="width: 80px; height: 80px;" src="{{item}}" mode="aspectFill"/>
+			</van-grid-item>
+		</van-grid>
+	</van-tab>
 </van-tabs>
