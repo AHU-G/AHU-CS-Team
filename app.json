@@ -8,10 +8,10 @@
     "pages/developer/developers",
     "pages/logs/logs",
     "pages/gameVideo/gameVideo",
+    "pages/record/record",
     "pages/members/members",
     "pages/aboutTeam/aboutTeam",
-    "pages/recruitment/recruitment",
-    "pages/record/record"
+    "pages/recruitment/recruitment"
   ],
   "window": {
     "backgroundTextStyle": "dark",
@@ -54,6 +54,8 @@
     "van-divider": "dist/divider/index",
     "van-field": "dist/field/index",
     "van-picker": "dist/picker/index",
-    "fa": "/components/includes/fa/index"
+    "fa": "/components/includes/fa/index",
+    "van-dialog": "dist/dialog/index",
+    "van-loading": "dist/loading/index"
   }
 }

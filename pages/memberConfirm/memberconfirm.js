@@ -1,4 +1,5 @@
 import specialties from '../../utils/specialties.js'
+import Dialog from '../../dist/dialog/dialog';
 
 Page({
 
@@ -6,6 +7,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    show: true,  // 是否显示弹窗
     columns: [{
         values: Object.keys(specialties),
         className: 'column1',
@@ -24,6 +26,16 @@ Page({
     tip: '发送验证码',
     timer: null,
     popupFlag: false,
+  },
+
+  onTempClose: function(e) {
+    this.setData({ show: false });
+    setTimeout(() => {
+      wx.navigateBack({
+        complete: (res) => {},
+      })
+    }, 1000);
+    
   },
 
   onClickSpec(){
@@ -115,7 +127,12 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+    Dialog.alert({
+      title: '标题',
+      message: '程序媛小改改还没有开发完毕...',
+    }).then(() => {
+      // on close
+    })
   },
 
   /**

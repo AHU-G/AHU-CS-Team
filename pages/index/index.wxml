@@ -8,6 +8,6 @@
   <van-grid-item icon="chart-trending-o" text="赛事记录" link-type="navigateTo" url="/pages/record/record" />
   <van-grid-item icon="photo-o" text="相册" link-type="navigateTo" url="/pages/album/album"/>
   <van-grid-item icon="video-o" text="比赛集锦" link-type="navigateTo" url="/pages/gameVideo/gameVideo"/>
-  <van-grid-item icon="bullhorn-o" text="通知" link-type="navigateTo" url="/pages/calendar/calendar"/>
+  <!-- <van-grid-item icon="bullhorn-o" text="通知" link-type="navigateTo" url="/pages/calendar/calendar"/> -->
   <van-grid-item icon="flag-o" text="开发信息" link-type="navigateTo" url="/pages/developer/developers"/>
 </van-grid>

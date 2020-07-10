@@ -8,7 +8,7 @@ Page({
   data: {
     active: 0,  // 默认启用第一个标签
     currentIndex: 0,
-    imgUrls: photo
+    imgUrls: photo,
   },
   
   onChange(e) {

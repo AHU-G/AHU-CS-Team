@@ -5,7 +5,38 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    records: [
+      {
+        'title': '计科vs电子',
+        'value': '24:20',
+        'status': true,
+        'result': '胜'
+      },
+      {
+        'title': '计科vs互联网',
+        'value': '24:14',
+        'status': true,
+        'result': '胜'
+      },
+      {
+        'title': '计科vs新传',
+        'value': '10:30',
+        'status': false,
+        'result': '负'
+      },
+      {
+        'title': '计科vs生科',
+        'value': '38:11',
+        'status': true,
+        'result': '胜'
+      },
+      {
+        'title': '计科vs文学',
+        'value': '22:18',
+        'status': true,
+        'result': '胜'
+      },
+    ]
   },
 
   /**

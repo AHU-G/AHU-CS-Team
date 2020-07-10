@@ -2,5 +2,6 @@
   "usingComponents": {
     "van-popup": "/dist/popup/index",
     "van-button": "/dist/button/index"
-  }
+  },
+  "navigationBarTitleText": "队员认证"
 }

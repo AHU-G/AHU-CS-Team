@@ -14,3 +14,12 @@
 <view class="btn-field">
 	<van-button plain type="primary" bind:click="submit" icon="sign"> 提 交 </van-button>
 </view>
+
+<van-dialog
+  use-slot
+  title="程序媛还没有开发完呢..."
+  show="{{ show }}"
+  bind:close="onTempClose"
+>
+  <image src="/images/static/non-finished.png" mode="aspectFill" />
+</van-dialog>

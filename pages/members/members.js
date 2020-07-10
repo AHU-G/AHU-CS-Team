@@ -21,14 +21,14 @@ Page({
 
   previewImg(e) {
     let index = e.currentTarget.dataset.index
-    let url = this.data.imgUrls[this.data.currentIndex][index]
-      wx.previewImage({
-        urls: this.data.imgUrls[this.data.currentIndex],
-        current: url,
-        success: res => {
+    let url = this.data.memberList[this.data.currentIndex][index].iconUrl
+    wx.previewImage({
+      urls: [url],
+      current: url,
+      success: res => {
 
-        }
-      })
+      }
+    })
   },
 
   /**
@@ -42,7 +42,9 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+    this.setData({
+      memberList: members
+    })
   },
 
   /**

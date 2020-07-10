@@ -1,24 +1,24 @@
 <view class="next1">
 	<text class="iconfont iconbaojiaquotation2"></text>
-	<text class="d1">安徽大学计算机科学与技术学院女子篮球队，创建于2012年。</text>
-	<text class="d1">安徽大学计算机科学与技术学院女子篮球队，创建于2012年。</text>
-	<text class="d1">安徽大学计算机科学与技术学院女子篮球队，创建于2012年。</text>
+	<text class="d1">安徽大学计算机科学与技术学院女子篮球队，成立于2012年，成立之初人数不足五人。</text>
+	<text class="d1">2013年注入新鲜血液后第一次参加篮球三好杯比赛即获得第八名的成绩。</text>
+	<text class="d1">经过近几年不断的发展壮大，计科女篮在2019年获得历史最好成绩第五名。</text>
 	<view class="tag2-container">
 		<text class="iconfont iconbaojiaquotation"></text>
 	</view>
 </view>
 <view class="next2">
 	<text class="iconfont iconbaojiaquotation2"></text>
-	<text class="d2">安徽大学计算机科学与技术学院女子篮球队，创建于2012年。</text>
-	<text class="d2">
-        安徽大学计算机科学与技术学院女子篮球队，创建于2012年。
-    </text>
+	<text class="d2">计科女篮主要比赛项目为：每年10月中旬的三好杯，以及每年5月中旬的3v3，均为校级篮球比赛，比赛名次可用于体育课免考成绩、申请奖学金等。</text>
+	<text class="d2">计科女篮日常训练频率为每周1~2次，比赛期间每周训练3~4次，训练由学长学姐负责，冬季和夏季一般不安排训练。</text>
+	<text class="d2">训练安排会考虑队员们的上课情况，以及考试情况，避开考试周。</text>
+	<text class="d2">队内氛围歪瑞古德，学长学姐平时会帮忙解答学业问题，队员们平时也会一起约自习，聚餐等等。</text>
 	<view class="tag2-container">
 		<text class="iconfont iconbaojiaquotation"></text>
 	</view>
 </view>
 <view>
-	<text style="color:#333333;font-size:28rpx;font-weight: 500">安徽大学计算机科学与技术学院女子篮球队，创建于2012年。</text>
+	<!-- <text style="color:#333333;font-size:28rpx;font-weight: 500">安徽大学计算机科学与技术学院女子篮球队，创建于2012年。</text> -->
 </view>
 <!-- <view class="award">
 	<text class="iconfont iconrongyubiaozhang"></text>
@@ -32,7 +32,7 @@
 			<text>女子组第五名</text>
 		</view>
 		<view class="right-side">
-			<view bind:tap="onCopyCourse" class="btn">
+			<view class="btn">
 				<text>2019</text>
 			</view>
 		</view>
@@ -43,7 +43,7 @@
 			<text>女子组第七名</text>
 		</view>
 		<view class="right-side">
-			<view bind:tap="onCopyCourse" class="btn">
+			<view class="btn">
 				<text>2019</text>
 			</view>
 		</view>
@@ -54,12 +54,34 @@
 			<text>女子组第七名</text>
 		</view>
 		<view class="right-side">
-			<view bind:tap="onCopyCourse" class="btn">
+			<view class="btn">
 				<text>2018</text>
 			</view>
 		</view>
 	</view>
-	......
+	<view class="one-row">
+		<view class="left-side">
+			<text>安徽大学新生杯篮球赛</text>
+			<text>女子组亚军</text>
+		</view>
+		<view class="right-side">
+			<view class="btn">
+				<text>2015</text>
+			</view>
+		</view>
+	</view>
+	<view class="one-row">
+		<view class="left-side">
+			<text>安徽大学学生篮球联赛</text>
+			<text>女子组第八名</text>
+		</view>
+		<view class="right-side">
+			<view class="btn">
+				<text>2013</text>
+			</view>
+		</view>
+	</view>
+	<!-- ...... -->
 </view>
 <view class="logo-container">
 	<image class="logo" src="/images/static/logo.png"></image>

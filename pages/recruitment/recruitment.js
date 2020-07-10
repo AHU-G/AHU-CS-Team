@@ -5,8 +5,15 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    videoUrl: 'http://qcs4zgm4j.bkt.clouddn.com/video/about_us.mp4',
+    groupNumber: '111111111',
   },
+
+  onCopyGroupNumber: function() {
+    wx.setClipboardData({
+        data: this.data.groupNumber
+    });
+},
 
   /**
    * 生命周期函数--监听页面加载
