@@ -50,12 +50,14 @@ page {
   color: #70502D;
   font-size: 28rpx;
   margin-bottom: 50rpx;
+  text-indent: 2em;
 }
 
 .d2 {
   color: #666666;
   font-size: 28rpx;
   margin-bottom: 50rpx;
+  text-indent: 2em;
 }
 
 .sleeve {
@@ -143,18 +145,19 @@ page {
 }
 
 .logo-container {
-  height: 200rpx;
+  height: 320rpx;
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-bottom: 50rpx;
+  margin-bottom: 15rpx;
+  margin-top: 20rpx;
 }
 
 .logo {
-  width: 200rpx;
-  height: 200rpx;
+  width: 100%;
+  height: 100%;
 }
 
 .award {

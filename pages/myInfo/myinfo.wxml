@@ -1,4 +1,5 @@
 <view class="container">
+	<image class="bg-img" src="/images/static/court.png" mode="aspectFill"></image>
 	<view class="userinfo">
 		<view class="login-btn" wx:if="{{!hasUserInfo && canIUse}}">
 			<van-button plain icon="smile-o" type="info" open-type="getUserInfo" bindgetuserinfo="getUserInfo">授权登录

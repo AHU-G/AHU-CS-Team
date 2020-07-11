@@ -1,4 +1,7 @@
 <view class="container">
+	<view class="next4">
+		<image class="logo" src="/images/static/team-logo.png" mode="aspectFill"></image>
+	</view>
 	<!-- <image class="top" src="/images/static/name.png" mode="aspectFill"></image> -->
 	<video custom-cache="{{false}}" style="width: 100%" src="{{videoUrl}}"></video>
 	<view class="next2">
@@ -35,10 +38,5 @@
 		<view class="one-row">
 			<image></image>
 		</view>
-	</view>
-	<view class="next4">
-		<image class="logo" src="/images/static/logo.png" mode="aspectFill"></image>
-		<text>安徽大学计算机科学与技术学院</text>
-		<text>女子篮球队</text>
 	</view>
 </view>

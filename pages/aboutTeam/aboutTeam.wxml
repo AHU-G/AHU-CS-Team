@@ -84,5 +84,5 @@
 	<!-- ...... -->
 </view>
 <view class="logo-container">
-	<image class="logo" src="/images/static/logo.png"></image>
+	<image class="logo" src="/images/static/team-logo.png" mode="aspectFill"></image>
 </view>

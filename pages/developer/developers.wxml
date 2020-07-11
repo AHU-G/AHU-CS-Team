@@ -1,6 +1,6 @@
 <view class='container'>
 	<view class='logo-container'>
-		<image class='logo-img' src='/images/static/logo.png'></image>
+		<image class='logo-img' src='/images/static/name.png' mode="aspectFill"></image>
 	</view>
 	<view class='attribute-container'>
 		<view class='attribute-title'>开发者信息</view>
