@@ -1,9 +1,9 @@
-<van-cell-group title="2019年安徽大学三好杯篮球联赛">
-	<van-cell value="{{item.value}}" wx:for="{{records}}" wx:key="index" data-index="{{index}}" >
+<van-cell-group title="{{item.title}}" wx:for="{{records}}"  wx:key="index" data-index="{{index}}">
+	<van-cell value="{{games.value}}" wx:for="{{item.games}}" wx:key="index" wx:for-item="games" >
 		<view slot="title">
-			<view class="van-cell-text">{{item.title}}</view>
-			<van-tag plain type="success" wx:if="{{item.status}}">{{item.result}}</van-tag>
-      <van-tag plain type="danger" wx:else>{{item.result}}</van-tag>
+			<view class="van-cell-text">{{games.title}}</view>
+			<van-tag plain type="success" wx:if="{{games.status}}">{{games.result}}</van-tag>
+      <van-tag plain type="danger" wx:else>{{games.result}}</van-tag>
 		</view>
 	</van-cell>
 </van-cell-group>

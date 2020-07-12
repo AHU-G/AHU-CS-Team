@@ -26,58 +26,14 @@
 </view> -->
 
 <view class="next3">
-	<view class="one-row">
+	<view class="one-row" wx:for="{{award}}" wx:key="index">
 		<view class="left-side">
-			<text>安徽大学学生篮球联赛</text>
-			<text>女子组第五名</text>
+			<text>{{item.game}}</text>
+			<text>{{item.prize}}</text>
 		</view>
 		<view class="right-side">
 			<view class="btn">
-				<text>2019</text>
-			</view>
-		</view>
-	</view>
-	<view class="one-row">
-		<view class="left-side">
-			<text>安徽大学第三届“3v3”篮球赛</text>
-			<text>女子组第七名</text>
-		</view>
-		<view class="right-side">
-			<view class="btn">
-				<text>2019</text>
-			</view>
-		</view>
-	</view>
-	<view class="one-row">
-		<view class="left-side">
-			<text>安徽大学学生篮球联赛</text>
-			<text>女子组第七名</text>
-		</view>
-		<view class="right-side">
-			<view class="btn">
-				<text>2018</text>
-			</view>
-		</view>
-	</view>
-	<view class="one-row">
-		<view class="left-side">
-			<text>安徽大学新生杯篮球赛</text>
-			<text>女子组亚军</text>
-		</view>
-		<view class="right-side">
-			<view class="btn">
-				<text>2015</text>
-			</view>
-		</view>
-	</view>
-	<view class="one-row">
-		<view class="left-side">
-			<text>安徽大学学生篮球联赛</text>
-			<text>女子组第八名</text>
-		</view>
-		<view class="right-side">
-			<view class="btn">
-				<text>2013</text>
+				<text>{{item.year}}</text>
 			</view>
 		</view>
 	</view>
