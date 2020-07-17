@@ -8,6 +8,7 @@ Page({
   data: {
     active: 0,  // 默认启用第一个标签
     currentIndex: 0,
+    abbrImgUrls: photo,
     imgUrls: photo,
   },
   
@@ -43,8 +44,15 @@ Page({
    */
   onReady: function () {
     this.setData({
-      imgUrls: photo
+      abbrImgUrls: photo,
+      imgUrls: photo,
     })
+    for (let i = 0; i < this.data.imgUrls.length; i++) {
+      let temp = this.data.imgUrls[i]
+      for (let j = 0; j < temp.length; j++) {
+        temp[j] = temp[j].substring(0, temp[j].length - 5) + '-mini'
+      }
+    }
   },
 
   /**

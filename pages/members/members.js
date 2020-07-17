@@ -9,6 +9,7 @@ Page({
     memberList: members,
     currentIndex: 0,
     active: 0, // 默认启用第一个标签
+    abbrMemberList: members
   },
 
   onChange(e) {
@@ -43,8 +44,16 @@ Page({
    */
   onReady: function () {
     this.setData({
-      memberList: members
+      memberList: members,
+      abbrMemberList: members
     })
+    for (let i = 0; i < this.data.memberList.length; i++) {
+      let temp = this.data.memberList[i]
+      for (let j = 0; j < temp.length; j++) {
+        temp[j].iconUrl = temp[j].iconUrl.substring(0, temp[j].iconUrl.length - 5) + '-mini'
+      }
+    }
+    console.log(this.data.memberList)
   },
 
   /**

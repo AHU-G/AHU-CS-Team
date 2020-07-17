@@ -4,9 +4,9 @@ const app = getApp()
 Page({
   data: {
     imgUrls: ['http://qcqo1h1n6.bkt.clouddn.com/static/swiper/01.jpg-mini',
-      'http://qcqo1h1n6.bkt.clouddn.com/static/swiper/02.jpg-mini',
-      'http://qcqo1h1n6.bkt.clouddn.com/static/swiper/03.jpg-mini',
-      'http://qcqo1h1n6.bkt.clouddn.com/static/swiper/04.jpg-mini',
+    'http://qcqo1h1n6.bkt.clouddn.com/static/swiper/02.jpg-mini',
+    'http://qcqo1h1n6.bkt.clouddn.com/static/swiper/03.jpg-mini',
+    'http://qcqo1h1n6.bkt.clouddn.com/static/swiper/04.jpg-mini',
     ], // 轮播图 
   },
 

@@ -87,7 +87,7 @@ const records = [
     },
     {
       'title': '计科vs社政',
-      'value': '忘了',
+      'value': '22:26',
       'status': false,
       'result': '负'
     },

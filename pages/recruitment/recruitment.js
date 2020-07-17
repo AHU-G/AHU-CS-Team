@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    videoUrl: 'http://qcs4zgm4j.bkt.clouddn.com/video/about_us.mp4',
+    videoUrl: 'http://codersy.cn/video/about_us.mp4',
     groupNumber: '111111111',
   },
 
