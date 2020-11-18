@@ -1,0 +1,47 @@
+<view class="title">常见问题 Q & A</view>
+<view class="container">
+  <view class="question-item">
+    <view class="item-left">
+      <view class="index">
+        <text>1</text>
+      </view>
+    </view>
+    <view class="item-right">
+      <text>为什么我在北体篮球场签到，却给我定位在其他区域??????</text>
+      <text>GPS信号不稳定或者网络不稳定，导致部分手机会出现定位不准的情况，如出现此问题，可以向经理报备。</text>
+    </view>
+  </view>
+  <view class="question-item">
+    <view class="item-left">
+      <view class="index">
+        <text>2</text>
+      </view>
+    </view>
+    <view class="item-right">
+      <text>训练结束时忘记签退了怎么办我giao？我尼玛现在已经回到寝室瘫在床上不想动啊!!!</text>
+      <text>后台已设定训练最大时长为4小时，达到这一阈值将自动签退。</text>
+    </view>
+  </view>
+  <view class="question-item">
+    <view class="item-left">
+      <view class="index">
+        <text>3</text>
+      </view>
+    </view>
+    <view class="item-right">
+      <text>不是计科女篮的宝子们可以用这个小程序吗？</text>
+      <text>游客可以查看公开内容，但无法使用身份认证、训练考勤等功能。\n（给钱的话开发者可以实现 ಥ_ಥ </text>
+    </view>
+  </view>
+  <view class="question-item">
+    <view class="item-left">
+      <view class="index">
+        <text>4</text>
+      </view>
+    </view>
+    <view class="item-right">
+      <text>我对于这个小程序有新的想法 or 我发现了小程序的bug~</text>
+      <text selectable='true'>欢迎联系开发者QQ或者发送邮件~\n 联系方式：184852634/tenmoons@foxmail.com </text>
+    </view>
+  </view>
+</view>

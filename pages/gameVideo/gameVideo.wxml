@@ -6,7 +6,7 @@
 		</view>
 		<view class="card-bottom {{cardPadding?'card-padding':'padd'}}">
 			<!-- <slot /> -->
-			<video style="width: 100%" src="{{item.url}}"></video>
+			<video id="myVideo" objectFit="cover" autoplay="true" style="width: 100%" src="{{item.url}}"></video>
 		</view>
 	</view>
 </view>

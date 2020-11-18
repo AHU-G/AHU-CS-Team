@@ -1,0 +1,21 @@
+<view class="check-info">
+	<van-field value="{{ stuname }}" required clearable label="姓  名" icon="question-o" placeholder="请输入姓名"
+		bind:click-icon="onClickIcon" bind:blur="onGetName" title-width="5em" />
+	<van-field value="{{ position }}" required clearable label="位  置" icon="question-o" placeholder=""
+		bind:click-icon="onClickIcon" use-button-slot bind:change="onGetPos" title-width="5em">
+		<van-button slot="button" size="small" type="info" bindtap="onGetLoc" color="#3963bc">获取位置</van-button>
+	</van-field>
+</view>
+
+<van-dialog id="van-dialog" />
+
+<view class="check-box">
+	<text>{{btnVal}}</text>
+</view>
+
+<view class="train-info">
+	<van-cell-group>
+		<van-cell title="开始时间" value="{{startTime}}" border="{{ false }}" />
+		<van-cell title="结束时间" value="{{endTime}}" border="{{ false }}" />
+	</van-cell-group>
+</view>

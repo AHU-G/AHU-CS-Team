@@ -1,5 +1,5 @@
 <p align="center">
-  <img alt="logo" src="http://qcqo1h1n6.bkt.clouddn.com/name.png-mini" width="600" style="margin-bottom: 10px;">
+  <img alt="logo" src="http://ahu-cs-female.oss-cn-hangzhou.aliyuncs.com/image/static/logo-transparent.png" width="600" style="margin-bottom: 10px;">
 </p>
 <h3 align="center">安大计科女篮官方小程序</h3>
 

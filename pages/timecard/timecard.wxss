@@ -1,0 +1,17 @@
+.check-box {
+  margin: 80rpx auto;
+  width: 400rpx;
+  height: 400rpx;
+  background: #8696a7;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 360rpx;
+  color: #fff;
+  font-weight: 900;
+  font-size: 96rpx;
+  box-shadow: 0 0 30px 1px rgba(173, 174, 178, 0.5);
+}
+
+.train-info {
+  margin-top: 50rpx;
+}

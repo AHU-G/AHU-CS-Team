@@ -3,7 +3,7 @@
 		<image class="logo" src="/images/static/team-logo.png" mode="aspectFill"></image>
 	</view>
 	<!-- <image class="top" src="/images/static/name.png" mode="aspectFill"></image> -->
-	<video custom-cache="{{false}}" style="width: 100%" src="{{videoUrl}}"></video>
+	<video custom-cache="{{false}}" autoplay="true" style="width: 100%" src="{{videoUrl}}"></video>
 	<view class="next2">
 		<view class="sub-container">
       <text class="d1">计科女篮是一支特立独行的队伍。</text>
@@ -15,10 +15,6 @@
 			<view class="next-inner">
 				<text class="d2">如果你看到这里心动了，那么加入我们吧</text>
 				<view class="block"></view>
-			</view>
-      <view class="next-inner">
-        <text class="d2">让我们一起乘风破浪</text>
-				<view class="block2"></view>
 			</view>
 		</view>
 	</view>
@@ -36,7 +32,7 @@
 			</view>
 		</view>
 		<view class="one-row">
-			<image></image>
+			<image src="../../images/static/qq-qrcode.jpg"></image>
 		</view>
 	</view>
 </view>

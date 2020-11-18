@@ -1,13 +1,23 @@
 //获取应用实例
 const app = getApp()
+import Dialog from '../../dist/dialog/dialog';
 
 Page({
   data: {
-    imgUrls: ['http://qcqo1h1n6.bkt.clouddn.com/static/swiper/01.jpg-mini',
-    'http://qcqo1h1n6.bkt.clouddn.com/static/swiper/02.jpg-mini',
-    'http://qcqo1h1n6.bkt.clouddn.com/static/swiper/03.jpg-mini',
-    'http://qcqo1h1n6.bkt.clouddn.com/static/swiper/04.jpg-mini',
+    imgUrls: ['http://ahu-cs-female.oss-accelerate.aliyuncs.com/image/static/swiper/01.jpg',
+    'http://ahu-cs-female.oss-accelerate.aliyuncs.com/image/static/swiper/02.jpg',
+    'http://ahu-cs-female.oss-accelerate.aliyuncs.com/image/static/swiper/03.jpg',
+    'http://ahu-cs-female.oss-accelerate.aliyuncs.com/image/static/swiper/04.jpg',
     ], // 轮播图 
+  },
+
+  onClickMore: function(e) {
+    Dialog.alert({
+      title: '提示',
+      message: '更多功能正在爆肝中...',
+    }).then(() => {
+      // on close
+    });
   },
 
   onLoad: function () {

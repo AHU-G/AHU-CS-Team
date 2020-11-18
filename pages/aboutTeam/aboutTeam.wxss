@@ -132,7 +132,7 @@ page {
   font-size: 28rpx;
 }
 
-.btn {
+.year {
   background-color: #FDF8EE;
   color: #D0B291;
   width: 50rpx;

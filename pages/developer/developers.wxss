@@ -85,7 +85,7 @@ page {
 }
 
 .attribute-title {
-  font-size  : 28rpx;
+  font-size  : 36rpx;
   font-family: PingFangSC-Regular;
   color      : rgba(89, 108, 142, 1);
 }
@@ -113,17 +113,17 @@ page {
   height         : 28rpx;
   background     : rgba(57, 99, 188, 0.1);
   color          : #3963bc;
-  font-size      : 20rpx;
+  font-size      : 28rpx;
   display        : flex;
   align-items    : center;
   justify-content: center;
 }
 
 .coder {
-  font-size  : 28rpx;
+  font-size  : 30rpx;
   font-family: PingFangSC-Regular;
   color      : rgba(89, 108, 142, 1);
-  margin-left: 16rpx;
+  margin-left: 36rpx;
 }
 
 .btn {

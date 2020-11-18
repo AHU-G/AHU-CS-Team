@@ -102,6 +102,13 @@ page {
   justify-content: space-between;
 }
 
+.one-row image {
+  width: 600rpx;
+  height: 600rpx;
+  display: inline-block;
+  overflow: hidden;
+}
+
 .right-side {
   padding-left: 14rpx;
   border-left: 3rpx dashed #3963bc;

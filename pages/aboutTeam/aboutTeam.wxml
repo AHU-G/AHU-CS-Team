@@ -17,13 +17,6 @@
 		<text class="iconfont iconbaojiaquotation"></text>
 	</view>
 </view>
-<view>
-	<!-- <text style="color:#333333;font-size:28rpx;font-weight: 500">安徽大学计算机科学与技术学院女子篮球队，创建于2012年。</text> -->
-</view>
-<!-- <view class="award">
-	<text class="iconfont iconrongyubiaozhang"></text>
-	<text>球队荣誉</text>
-</view> -->
 
 <view class="next3">
 	<view class="one-row" wx:for="{{award}}" wx:key="index">
@@ -32,12 +25,11 @@
 			<text>{{item.prize}}</text>
 		</view>
 		<view class="right-side">
-			<view class="btn">
+			<view class="year">
 				<text>{{item.year}}</text>
 			</view>
 		</view>
 	</view>
-	<!-- ...... -->
 </view>
 <view class="logo-container">
 	<image class="logo" src="/images/static/team-logo.png" mode="aspectFill"></image>

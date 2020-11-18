@@ -3,7 +3,7 @@
 		<image class='logo-img' src='/images/static/name.png' mode="aspectFill"></image>
 	</view>
 	<view class='attribute-container'>
-		<view class='attribute-title'>开发者信息</view>
+		<view class='attribute-title'>开发信息</view>
 		<view class='attribute-item'>
 			<view class='attribute-code-container'>
 				<view class='code-circle'></view>
@@ -24,6 +24,11 @@
 				<view class='code-circle'></view>
 				<view class='code-name'>测试</view>
 				<view class='coder'>还是TenMoons 嘻 (o≖◡≖)</view>
+			</view>
+			<view class='attribute-code-container'>
+				<view class='code-circle'></view>
+				<view class='code-name'>版本号</view>
+				<view class='coder'>1.0.0</view>
 			</view>
 		</view>
 	</view>

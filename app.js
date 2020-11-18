@@ -1,4 +1,5 @@
-//app.js
+var app = getApp()
+
 App({
   onLaunch: function () {
     // 展示本地存储能力
@@ -6,12 +7,7 @@ App({
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
 
-    // 登录
-    wx.login({
-      success: res => {
-        // 发送 res.code 到后台换取 openId, sessionKey, unionId
-      }
-    })
+    var that = this
     // 获取用户信息
     wx.getSetting({
       success: res => {
@@ -27,13 +23,86 @@ App({
               if (this.userInfoReadyCallback) {
                 this.userInfoReadyCallback(res)
               }
+              console.log(this.globalData.userInfo)
+            }
+          })
+        }
+      }
+    })
+    
+    // 登录
+    wx.login({
+      success: res => {
+        // 发送 res.code 到后台换取 openId, sessionKey, unionId
+        wx.request({
+          url: that.getHeader() + '/team/getOpenid',
+          data: {
+            code: res.code
+          },
+          header: {
+            'content-type': 'application/json'
+          },
+          success: res1 => {
+            that.globalData.openid = res1.data.openid
+            console.log("openid:" + res1.data.openid)
+            this.getUidAndAuth()
+          }
+        })
+      }
+    })
+  },
+
+  globalData: {
+    userInfo: null,
+    messages: [],
+    openid: '',
+    uid: '',
+    auth: '0',
+    protocal: 'http://',
+    host: 'localhost',
+    port: 8080,
+  },
+
+  /**
+   * 封装请求头
+   */
+  getHeader() {
+    var header = this.globalData.protocal + this.globalData.host + ':' + this.globalData.port
+    return header
+  },
+
+  /**
+   * 获取uid和auth
+   */
+  getUidAndAuth() {
+    var json = this.globalData.userInfo
+    json.openId = this.globalData.openid
+    json.wechatName = this.globalData.userInfo.nickName
+    wx.request({
+      url: this.getHeader() + '/team/getUid',
+      method: 'POST',
+      data: json,
+      contentType: 'application/json',
+      success: res => {
+        if (res.data != 'fail') {
+          this.globalData.uid = res.data
+          console.log(this.globalData.uid)
+          wx.request({
+            url: this.getHeader() + '/team/getUserAuth',
+            method: 'GET',
+            header: {
+              'content-type': 'application/json;charset=UTF-8' // 默认值
+            },
+            data: {
+              'uid': this.globalData.uid
+            },
+            success: res => {
+              this.globalData.auth = res.data
             }
           })
         }
       }
     })
   },
-  globalData: {
-    userInfo: null
-  }
+
 })

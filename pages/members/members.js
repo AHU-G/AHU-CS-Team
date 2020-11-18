@@ -1,4 +1,10 @@
 import members from '../../utils/members.js'
+var defaultAvatarUrl = [
+  'http://inews.gtimg.com/newsapp_bt/0/9158128016/0/0',
+  'http://inews.gtimg.com/newsapp_bt/0/9158127750/0/0',
+  'http://inews.gtimg.com/newsapp_bt/0/9158128016/0/0',
+  'https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3422191965,246147142&fm=26&gp=0.jpg'
+]
 
 Page({
 
@@ -6,10 +12,10 @@ Page({
    * 页面的初始数据
    */
   data: {
-    memberList: members,
+    memberList: members,  // 原图
     currentIndex: 0,
     active: 0, // 默认启用第一个标签
-    abbrMemberList: members
+    abbrMemberList: members,  // 缩略图
   },
 
   onChange(e) {
@@ -43,17 +49,11 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
+
     this.setData({
       memberList: members,
       abbrMemberList: members
     })
-    for (let i = 0; i < this.data.memberList.length; i++) {
-      let temp = this.data.memberList[i]
-      for (let j = 0; j < temp.length; j++) {
-        temp[j].iconUrl = temp[j].iconUrl.substring(0, temp[j].iconUrl.length - 5) + '-mini'
-      }
-    }
-    console.log(this.data.memberList)
   },
 
   /**
