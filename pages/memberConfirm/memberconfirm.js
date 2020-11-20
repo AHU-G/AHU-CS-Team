@@ -131,7 +131,7 @@ Page({
         message: '加载中...',
         forbidClick: true,
         loadingType: 'spinner',
-        duration: 1500
+        duration: 500
       });
 
       wx.request({
@@ -143,6 +143,10 @@ Page({
           console.log(res)
           if (res.data == 'success') {
             Notify({ type: 'success', message: '认证成功~' });
+            app.globalData.stuName = stuName
+            app.globalData.auth = 1
+            wx.setStorageSync('stuName', stuName)
+            wx.setStorageSync('auth', 1)
             setTimeout(() => {
               wx.navigateBack({
                 complete: (res) => {},

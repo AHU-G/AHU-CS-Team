@@ -1,4 +1,4 @@
-<view wx:for="{{video}}">
+<!-- <view wx:for="{{video}}">
 	<view class="content-card">
 		<view class="card-top">
 			<view class="card-dot"></view>
@@ -6,7 +6,7 @@
 		</view>
 		<view class="card-bottom {{cardPadding?'card-padding':'padd'}}">
 			<!-- <slot /> -->
-			<video id="myVideo" objectFit="cover" autoplay="true" style="width: 100%" src="{{item.url}}"></video>
+			<!-- <video id="myVideo" objectFit="cover" autoplay="true" style="width: 100%" src="{{item.url}}"></video>
 		</view>
 	</view>
-</view>
+</view> --> -->

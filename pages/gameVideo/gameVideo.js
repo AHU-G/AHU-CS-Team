@@ -1,4 +1,4 @@
-import qqVideo from '../../utils/qqVideo.js'
+
 import Toast from '../../dist/toast/toast.js'
 var videoPage;
 var pageArr = new Array()
@@ -38,37 +38,14 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    if (options.vid != undefined) {
-      this.setData({
-        file_id: options.vid
-      })
-    } else {
-      Toast.fail('缺少视频id')
-    }
-
-    videoPage = 1;
-    pageArr = new Array()
-    part_urls = {}
-    let that = this
-    const vid = options.vid
-    console.log('vid=' + vid)
-    qqVideo.getVideoes(vid).then((response) => {
-      for (let i = 1; i < response.length + 1; i++) {
-        let indexStr = 'index' + (i)
-        pageArr.push(i)
-        part_urls[indexStr] = response[i - 1]
-      }
-      that.setData({
-        videoUrl: response[0]
-      })
-    })
+    
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-    this.videoContext = wx.createVideoContext('myVideo')
+    
   },
 
   /**

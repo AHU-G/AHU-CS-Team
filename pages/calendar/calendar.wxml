@@ -1,1 +1,0 @@
-<van-calendar class="calendar" title="" show="{{ show }}" show-confirm="{{ false }}" poppable="{{ false }}" />

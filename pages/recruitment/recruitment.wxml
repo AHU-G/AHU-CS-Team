@@ -2,11 +2,12 @@
 	<view class="next4">
 		<image class="logo" src="/images/static/team-logo.png" mode="aspectFill"></image>
 	</view>
-	<!-- <image class="top" src="/images/static/name.png" mode="aspectFill"></image> -->
-	<video custom-cache="{{false}}" autoplay="true" style="width: 100%" src="{{videoUrl}}"></video>
+	<view>
+		<txv-video vid="{{vid}}" playerid="{{vid}}" autoplay="true" />
+	</view>
 	<view class="next2">
 		<view class="sub-container">
-      <text class="d1">计科女篮是一支特立独行的队伍。</text>
+			<text class="d1">计科女篮是一支特立独行的队伍。</text>
 			<text class="d1">这里有歪瑞古德的团队氛围，我们可以一起训练来锻炼身体，可以一同相约文典阁沉迷学习无法自拔，也可以一拍即合奔赴九龙街来一顿痛痛快快的宵夜。</text>
 			<text class="d1">这里有优秀暖心的学长学姐，文能辅导高数C语言助你学习无忧，武能在球场上一枝独秀大杀四方。</text>
 			<text class="d1">不要求你会三步上篮、投篮甚至运球，只要你有颗热爱篮球的心，在这里可以从运球开始学，包教包会。 </text>

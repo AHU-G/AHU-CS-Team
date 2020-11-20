@@ -29,27 +29,41 @@ App({
         }
       }
     })
-    
-    // 登录
-    wx.login({
-      success: res => {
-        // 发送 res.code 到后台换取 openId, sessionKey, unionId
-        wx.request({
-          url: that.getHeader() + '/team/getOpenid',
-          data: {
-            code: res.code
-          },
-          header: {
-            'content-type': 'application/json'
-          },
-          success: res1 => {
-            that.globalData.openid = res1.data.openid
-            console.log("openid:" + res1.data.openid)
-            this.getUidAndAuth()
-          }
-        })
-      }
-    })
+
+    var openId = wx.getStorageSync('openId')
+    var uid = wx.getStorageSync('uid')
+    var auth = wx.getStorageSync('auth')
+    console.log('缓存数据：uid:', uid, ',auth:', wx.getStorageSync('auth'), ',openid:', openId )
+
+    if (openId != '' && uid != '') {
+      this.globalData.openid = openId
+      this.globalData.uid = uid
+      this.globalData.auth = auth
+    } else {
+      // 登录
+      wx.login({
+        success: res => {
+          // 发送 res.code 到后台换取 openId, sessionKey, unionId
+          wx.request({
+            url: that.getHeader() + '/team/getOpenid',
+            data: {
+              code: res.code
+            },
+            header: {
+              'content-type': 'application/json'
+            },
+            success: res1 => {
+              that.globalData.openid = res1.data.openid
+              console.log("openid:" + res1.data.openid)
+              wx.setStorageSync('openId', res1.data.openid)
+              this.getUidAndAuth()
+            }
+          })
+        }
+      })
+    }
+
+
   },
 
   globalData: {
@@ -61,6 +75,9 @@ App({
     protocal: 'http://',
     host: 'localhost',
     port: 8080,
+    startTime: '',
+    wholeTime: '',
+    stuName: ''
   },
 
   /**
@@ -75,18 +92,21 @@ App({
    * 获取uid和auth
    */
   getUidAndAuth() {
-    var json = this.globalData.userInfo
-    json.openId = this.globalData.openid
-    json.wechatName = this.globalData.userInfo.nickName
     wx.request({
       url: this.getHeader() + '/team/getUid',
-      method: 'POST',
-      data: json,
-      contentType: 'application/json',
+      method: 'GET',
+      data: {
+        'openId': this.globalData.openid,
+        'wechatName': this.globalData.userInfo.nickName
+      },
+      header: {
+        'content-type': 'application/json;charset=UTF-8' // 默认值
+      },
       success: res => {
         if (res.data != 'fail') {
           this.globalData.uid = res.data
           console.log(this.globalData.uid)
+          wx.setStorageSync('uid', res.data)
           wx.request({
             url: this.getHeader() + '/team/getUserAuth',
             method: 'GET',
@@ -97,7 +117,9 @@ App({
               'uid': this.globalData.uid
             },
             success: res => {
+              console.log('auth=', res)
               this.globalData.auth = res.data
+              wx.setStorageSync('auth', res.data)
             }
           })
         }

@@ -1,11 +1,11 @@
-// pages/calendar/calendar.js
+// pages/myPractice/myPractice.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    show: true,
+
   },
 
   /**

@@ -1,0 +1,34 @@
+<view class="container">
+  <van-icon name="award-o" size="240rpx" color="#3963bc" />
+  <view class="row-1">
+    <text class="title">Congratulation!\n</text>
+    <!-- <text class="name">石月 同学</text> -->
+    <text class="title">{{stuName}} 同学</text>
+  </view>
+  <view class="row-2">
+    本次训练时长为
+  </view>
+  <view class="row-3">
+    <view class="row-time">
+      <text class="iconfont iconbaojiaquotation2"></text>
+      <!-- <text class="time">2小时15分钟42秒</text> -->
+      <text class="time">{{currentTimeGap}}</text>
+      <text class="iconfont iconbaojiaquotation"></text>
+    </view>
+  </view>
+  <view class="row-4">
+    <text class="content">经过这次训练\n</text>
+    <text class="content">你的球技又得到了提升\n</text>
+    <text class="content">有了质的飞跃\n</text>
+    <text class="content">相信不久的将来\n</text>
+    <text class="content">你就能成为独当一面的打铁匠啦~\n</text>
+  </view>
+
+  <view class="btn-field">
+    <van-button type="info" custom-style="width: 600rpx;margin: 50rpx auto; align-items: center" bind:click="submit"
+      color="#3963bc" bind:click="goToEcharts">查看我的训练统计图表</van-button>
+  </view>
+
+</view>
+
+<van-dialog id="van-dialog" />
